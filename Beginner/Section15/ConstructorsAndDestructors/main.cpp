@@ -14,7 +14,7 @@ public:
 };
 
 class Derived : public Base {
-    using Base::Base;
+    using Base::Base; // works like conturctor, copy and destruvot inheritance (wuthout it doenst have inheritance of constructors)
 private:
     int doubled_value;
 public:
