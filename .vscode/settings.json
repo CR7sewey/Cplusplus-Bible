@@ -72,6 +72,10 @@
     "variant": "cpp",
     "iomanip": "cpp",
     "sstream": "cpp",
-    "fstream": "cpp"
-  }
+    "fstream": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "set": "cpp"
+  },
+  "C_Cpp.default.compilerPath": "C:/mingw64/bin/gcc.exe"
 }
