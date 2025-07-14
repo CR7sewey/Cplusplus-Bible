@@ -42,9 +42,15 @@ int main() {
     // b loses the reference, so it is also destroyed
 
     shared_ptr<A> a  = make_shared<A>();
+    cout << a.use_count() << endl;
     shared_ptr<B> b = make_shared<B>();
+    cout << b.use_count() << endl;
+
     a->set_B(b);
     b->set_A(a);
+    cout << a.use_count() << endl;
+    cout << b.use_count() << endl;
+    // if both shared destructor is not called
     
     return 0;
 }
